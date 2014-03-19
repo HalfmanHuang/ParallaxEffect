@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.beifeng.parallax"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Black.NoTitleBar" >
+
+        <!-- 主页面 -->
+        <activity
+            android:name="org.beifeng.parallax.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 普通滚动视图页面 -->
+        <activity android:name="org.beifeng.parallax.NormalActivity" >
+        </activity>
+        <!-- 简单视差滚动视图页面 -->
+        <activity android:name="org.beifeng.parallax.SimpleActivity" >
+        </activity>
+        <!-- 仿饭本滚动视图页面 -->
+        <activity android:name="org.beifeng.parallax.RiceBookActivity" >
+        </activity>
+    </application>
+
+</manifest>
